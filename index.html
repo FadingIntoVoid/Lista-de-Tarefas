@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="switch-container">
+        <span id="modo-escuro-status">Modo Escuro: Desativado</span>
+        <label class="switch">
+            <input type="checkbox" id="modo-escuro-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>Minha Lista de Tarefas</h1>
+        
+        <div class="adicionar-tarefa" id="adicionar-tarefa">
+            <input type="text" id="tarefa-input" placeholder="Digite uma tarefa">
+            <button id="btnAdd">Adicionar</button>
+        </div>
+
+        <select id="filtro">
+            <option value="Todas">Todas</option>
+            <option value="Pendentes">Pendentes</option>
+            <option value="Concluídas">Concluídas</option>
+        </select>
+    </div>
+
+    <ul id="lista-tarefas"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
